@@ -27,7 +27,7 @@ class Float < Object
 
   def abs: () -> Float
 
-  def clamp: (Integer | Float min, Integer | Float max) -> Integer | Float
+  def clamp: (Integer | Float min, Integer | Float max) -> (Integer | Float)
 
   def to_i: () -> Integer
 
