@@ -1,0 +1,13 @@
+class NilClass < Object
+  def inspect: () -> "nil"
+
+  def to_a: () -> []
+
+  def to_f: () -> 0
+
+  def to_h: () -> {}
+
+  def to_i: () -> 0
+
+  def to_s: () -> ""
+end
