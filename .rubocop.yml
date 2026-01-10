@@ -1,0 +1,27 @@
+plugins:
+  - rubocop-on-rbs
+
+AllCops:
+  NewCops: enable
+
+# rubocop needs manual exclude each rule; why???
+Style/Documentation:
+  Exclude:
+    - "**/*.rbs"
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - "**/*.rbs"
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Layout/LineLength:
+  Max: 120
+
+RBS:
+  Enabled: true
