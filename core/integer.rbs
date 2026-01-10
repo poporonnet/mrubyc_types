@@ -5,20 +5,20 @@ class Integer < Object
 
   def -@: () -> Integer
 
-  # TODO Float
   def +: (Integer) -> Integer
+       | (Float) -> Float
 
-  # TODO Float
   def -: (Integer) -> Integer
+       | (Float) -> Float
 
-  # TODO Float
   def *: (Integer) -> Integer
+       | (Float) -> Float
 
-  # TODO Float
   def /: (Integer) -> Integer
+       | (Float) -> Float
 
-  # TODO Float
   def **: (Integer) -> Integer
+        | (Float) -> Float
 
   def %: (Integer) -> Integer
 
@@ -38,25 +38,22 @@ class Integer < Object
 
   def !=: (untyped other) -> bool
 
-  # TODO: Float
-  def <: (Integer other) -> bool
+  def <: (Integer | Float other) -> bool
 
-  # TODO: Float
-  def <=: (Integer other) -> bool
+  def <=: (Integer | Float other) -> bool
 
-  # TODO: Float
-  def >: (Integer other) -> bool
+  def >: (Integer | Float other) -> bool
 
-  # TODO: Float
-  def >=: (Integer other) -> bool
+  def >=: (Integer | Float other) -> bool
 
   def abs: () -> Integer
 
-  # TODO: Float
   def clamp: (Integer min, Integer max) -> Integer
+           | (Integer | Float min, Integer | Float max) -> (Integer | Float)
 
-  # TODO: Float
-  # def to_f: () -> Float
+  def to_i: () -> Integer
+
+  def to_f: () -> Float
 
   # TODO: String
   # def chr: () -> String
