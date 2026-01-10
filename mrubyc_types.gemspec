@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['tufusa']
   spec.email = ['me@tufusa.net']
 
-  spec.summary = 'summary'
-  spec.description = 'description'
+  spec.summary = 'RBS type definitions for mruby/c built-in classes.'
+  spec.description = 'RBS type definitions for mruby/c built-in classes.'
   spec.homepage = 'https://github.com/poporonnet/mrubyc_types'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
