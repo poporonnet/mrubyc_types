@@ -1,0 +1,70 @@
+class Integer < Object
+  def []: (Integer) -> Integer
+
+  def +@: () -> Integer
+
+  def -@: () -> Integer
+
+  # TODO Float
+  def +: (Integer) -> Integer
+
+  # TODO Float
+  def -: (Integer) -> Integer
+
+  # TODO Float
+  def *: (Integer) -> Integer
+
+  # TODO Float
+  def /: (Integer) -> Integer
+
+  # TODO Float
+  def **: (Integer) -> Integer
+
+  def %: (Integer) -> Integer
+
+  def &: (Integer) -> Integer
+
+  def |: (Integer) -> Integer
+
+  def ^: (Integer) -> Integer
+
+  def ~: () -> Integer
+
+  def <<: (Integer) -> Integer
+
+  def >>: (Integer) -> Integer
+
+  def ==: (untyped other) -> bool
+
+  def !=: (untyped other) -> bool
+
+  # TODO: Float
+  def <: (Integer other) -> bool
+
+  # TODO: Float
+  def <=: (Integer other) -> bool
+
+  # TODO: Float
+  def >: (Integer other) -> bool
+
+  # TODO: Float
+  def >=: (Integer other) -> bool
+
+  def abs: () -> Integer
+
+  # TODO: Float
+  def clamp: (Integer min, Integer max) -> Integer
+
+  # TODO: Float
+  # def to_f: () -> Float
+
+  # TODO: String
+  # def chr: () -> String
+
+  # TODO: String
+  # def inspect: () -> String
+  # def self.inspect: () -> String
+  #
+  # alias to_s inspect
+  # alias self.to_s self.inspect
+end
