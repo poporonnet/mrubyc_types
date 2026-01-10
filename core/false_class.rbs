@@ -1,0 +1,5 @@
+class FalseClass < Object
+  def inspect: () -> "false"
+
+  def to_s: () -> "false"
+end

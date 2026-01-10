@@ -1,0 +1,5 @@
+class TrueClass < Object
+  def inspect: () -> "true"
+
+  def to_s: () -> "true"
+end
