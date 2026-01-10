@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # rubocop:disable Lint/Void
+# rubocop:disable Lint/FloatComparison
 
 +3.141
 -3.141
