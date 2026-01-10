@@ -1,0 +1,42 @@
+class Float < Object
+  def +@: () -> Float
+
+  def -@: () -> Float
+
+  def +: (Integer | Float) -> Float
+
+  def -: (Integer | Float) -> Float
+
+  def *: (Integer | Float) -> Float
+
+  def /: (Integer | Float) -> Float
+
+  def **: (Integer | Float) -> Float
+
+  def ==: (untyped other) -> bool
+
+  def !=: (untyped other) -> bool
+
+  def <: (Integer | Float other) -> bool
+
+  def <=: (Integer | Float other) -> bool
+
+  def >: (Integer | Float other) -> bool
+
+  def >=: (Integer | Float other) -> bool
+
+  def abs: () -> Float
+
+  def clamp: (Integer | Float min, Integer | Float max) -> (Integer | Float)
+
+  def to_i: () -> Integer
+
+  def to_f: () -> Float
+
+  # TODO: String
+  # def inspect: () -> String
+  # def self.inspect: () -> String
+  #
+  # alias to_s inspect
+  # alias self.to_s self.inspect
+end
