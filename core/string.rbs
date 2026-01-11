@@ -1,0 +1,105 @@
+class String < Object
+  def initialize: (?String source) -> void
+
+  def +: (String) -> String
+
+  def *: (Integer times) -> String
+
+  def size: () -> Integer
+
+  alias length size
+
+  def to_i: (?Integer base) -> Integer
+
+  def to_f: () -> Float
+
+  def to_s: () -> String
+  def self.to_s: () -> String
+
+  def <<: (String) -> String
+
+  # TODO: Range
+  def slice: (Integer nth) -> String?
+           | (Integer nth, Integer len) -> String?
+  #        | (Range range) -> String?
+
+  alias [] slice
+
+  # TODO: Range
+  def []=: (Integer nth, String val) -> String
+         | (Integer nth, Integer len, String val) -> String
+  #      | (Range range, String val) -> String
+
+  def chomp: () -> String
+
+  def chomp!: () -> self?
+
+  def clear: () -> self
+
+  def dup: () -> String
+
+  def empty?: () -> bool
+
+  def getbyte: (Integer index) -> Integer?
+
+  def setbyte: (Integer index, Integer b) -> Integer
+
+  def index: (String pattern, ?Integer pos) -> Integer?
+
+  def inspect: () -> String
+  def self.inspect: () -> String
+
+  def ord: () -> Integer
+
+  def slice!: (Integer nth) -> String?
+            | (Integer nth, Integer len) -> String?
+
+  # TODO: Array
+  # def split: (String? sep, ?Integer limit) -> Array[String]
+
+  def lstrip: () -> String
+
+  def lstrip!: () -> self?
+
+  def rstrip: () -> String
+
+  def rstrip!: () -> self?
+
+  def strip: () -> String
+
+  def strip!: () -> self?
+
+  # TODO: Symbol
+  # def to_sym: () -> Symbol
+
+  def tr: (String pattern, String replace) -> String
+
+  def tr!: (String pattern, String replace) -> self?
+
+  def start_with?: (String prefix) -> bool
+
+  def end_with?: (String suffix) -> bool
+
+  def include?: (String) -> bool
+
+  # TODO: Array
+  # def bytes: () -> Array[Integer]
+
+  def upcase: () -> String
+
+  def upcase!: () -> self?
+
+  def downcase: () -> String
+
+  def downcase!: () -> self?
+
+  def each_byte: () { (Integer byte) -> void } -> self
+
+  def each_char: () { (String char) -> void } -> self
+
+  def ljust: (Integer width, ?String padding) -> String
+
+  def rjust: (Integer width, ?String padding) -> String
+
+  def each_line: (?String rs, ?chomp: bool) { (String line) -> void } -> self
+end
