@@ -7,6 +7,18 @@
 String.new
 String.new 'abcdef'
 
+'abcdef' == true
+
+'abcdef' != false
+
+'abc' < 'def'
+
+'abc' <= 'def'
+
+'abc' > 'def'
+
+'abc' >= 'def'
+
 'abc' + 'bef'
 
 'abcdef' * 100
