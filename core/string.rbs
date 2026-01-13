@@ -42,6 +42,8 @@ class String < Object
          | (Integer nth, Integer len, String val) -> String
   #      | (Range range, String val) -> String
 
+  def b: () -> String
+
   def chomp: () -> String
 
   def chomp!: () -> self?
@@ -83,6 +85,8 @@ class String < Object
 
   # TODO: Symbol
   # def to_sym: () -> Symbol
+  #
+  # alias intern to_sym
 
   def tr: (String pattern, String replace) -> String
 
