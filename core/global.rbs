@@ -1,0 +1,4 @@
+RUBY_VERSION: string
+MRUBY_VERSION: string
+MRUBYC_VERSION: string
+RUBY_ENGINE: string
