@@ -46,6 +46,8 @@ String.to_s
 'abcdef'[3] = 'D'
 'abcdef'[3, 3] = 'defghi'
 
+'abcdef'.b
+
 "abcdef\n".chomp
 
 "abcdef\n".chomp!
