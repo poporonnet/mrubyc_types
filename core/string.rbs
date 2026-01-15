@@ -1,10 +1,6 @@
 class String < Object
   def initialize: (?String source) -> void
 
-  def ==: (untyped other) -> bool
-
-  def !=: (untyped other) -> bool
-
   def <: (String other) -> bool
 
   def <=: (String other) -> bool

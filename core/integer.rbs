@@ -34,10 +34,6 @@ class Integer < Object
 
   def >>: (Integer) -> Integer
 
-  def ==: (untyped other) -> bool
-
-  def !=: (untyped other) -> bool
-
   def <: (Integer | Float other) -> bool
 
   def <=: (Integer | Float other) -> bool
