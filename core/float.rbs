@@ -13,10 +13,6 @@ class Float < Object
 
   def **: (Integer | Float) -> Float
 
-  def ==: (untyped other) -> bool
-
-  def !=: (untyped other) -> bool
-
   def <: (Integer | Float other) -> bool
 
   def <=: (Integer | Float other) -> bool

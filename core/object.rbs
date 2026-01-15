@@ -1,2 +1,92 @@
 class Object < BasicObject
+  def !: () -> bool
+  def self.!: () -> bool
+
+  def !=: (untyped other) -> bool
+  def self.!=: (untyped other) -> bool
+
+  def <=>: (untyped other) -> bool
+  def self.<=>: (untyped other) -> bool
+
+  def ==: (untyped other) -> bool
+  def self.==: (untyped other) -> bool
+
+  def ===: (untyped other) -> bool
+  def self.===: (untyped other) -> bool
+
+  def <: (untyped other) -> bool
+
+  def <=: (untyped other) -> bool
+
+  def >: (untyped other) -> bool
+
+  def >=: (untyped other) -> bool
+
+  def class: () -> class
+  def self.class: () -> self
+
+  def dup: () -> self
+  def self.dup: () -> self
+
+  def block_given?: () -> bool
+
+  # TODO: Module
+  def kind_of?: (Class) -> bool
+  def self.kind_of?: (Class) -> bool
+
+  alias is_a? kind_of?
+  alias self.is_a? self.kind_of?
+
+  def nil?: () -> bool
+  def self.nil?: () -> bool
+
+  # TODO: Array
+  def p: () -> nil
+       | [T](T arg0) -> T
+
+  def print: (*untyped args) -> nil
+
+  def puts: (*untyped args) -> nil
+
+  # TODO Exception
+  def raise: () -> bot
+           | (String message) -> bot
+  #        | (Exception) -> bot
+  #        | (singleton(Exception)) -> bot
+  #        | (Exception, String message) -> bot
+  #        | (singleton(Exception), String message) -> bot
+
+  # TODO: Symbol
+  # def self.attr_reader: (*String names) -> void
+
+  # TODO: Symbol
+  # def self.attr_accessor: (*Symbol names) -> void
+
+  # TODO: Module
+  # def include: (*Module mods) -> void
+  # def self.include: (*Module mods) -> void
+  #
+  # alias extend include
+  # alias self.extend include
+
+  # TODO: Array, Symbol
+  # def self.constants: (?bool inherit) -> Array[Symbol]
+
+  def self.public: () -> void
+
+  def self.private: () -> void
+
+  def self.protected: () -> void
+
+  def sprintf: (String format, *untyped args) -> String
+
+  def printf: (String format, *untyped args) -> nil
+
+  def to_s: () -> String
+  def self.to_s: () -> String
+
+  alias inspect to_s
+  alias self.inspect self.to_s
+
+  def loop: () { () -> void } -> bot
 end
