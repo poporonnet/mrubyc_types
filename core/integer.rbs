@@ -64,4 +64,10 @@ class Integer < Object
   #
   # alias to_s inspect
   # alias self.to_s self.inspect
+
+  def times: () { (Integer i) -> void } -> self
+
+  def upto: (Integer max) { (Integer i) -> void } -> self
+
+  def downto: (Integer min) { (Integer i) -> void } -> self
 end
