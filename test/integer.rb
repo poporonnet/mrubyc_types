@@ -56,4 +56,10 @@
 123.clamp 0, 100
 123.clamp 0, 100.0
 
+123.times { |i| i }
+
+123.upto(456) { |i| i }
+
+456.downto(123) { |i| i }
+
 # rubocop:enable all
