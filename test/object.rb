@@ -82,12 +82,27 @@ object.raise 'error'
 
 # @type const A: Class
 class A
+  # @type const TestMod: Module
+  module TestMod end
+
+  include TestMod
+  include TestMod, TestMod, TestMod
+
+  extend TestMod
+  extend TestMod, TestMod, TestMod
+
   public
 
   private
 
   protected
 end
+
+Object.include TestMod
+Object.include TestMod, TestMod, TestMod
+
+Object.extend TestMod
+Object.extend TestMod, TestMod, TestMod
 
 sprintf "%d\n", 123
 
