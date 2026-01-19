@@ -1,0 +1,14 @@
+class Symbol < Object
+  # TODO: Array
+  # def self.all_symbols: () -> Array[Symbol]
+
+  def inspect: () -> String
+  def self.inspect: () -> String
+
+  def to_s: () -> String
+  def self.to_s: () -> String
+
+  alias id2name to_s
+
+  def to_sym: () -> Symbol
+end

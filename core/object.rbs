@@ -55,11 +55,9 @@ class Object < BasicObject
   #        | (Exception, String message) -> bot
   #        | (singleton(Exception), String message) -> bot
 
-  # TODO: Symbol
-  # def self.attr_reader: (*String names) -> void
+  def self.attr_reader: (*Symbol names) -> void
 
-  # TODO: Symbol
-  # def self.attr_accessor: (*Symbol names) -> void
+  def self.attr_accessor: (*Symbol names) -> void
 
   def include: (Module, *Module mods) -> void
   def self.include: (Module, *Module mods) -> void
@@ -67,7 +65,7 @@ class Object < BasicObject
   alias extend include
   alias self.extend self.include
 
-  # TODO: Array, Symbol
+  # TODO: Array
   # def self.constants: (?bool inherit) -> Array[Symbol]
 
   def self.public: () -> void

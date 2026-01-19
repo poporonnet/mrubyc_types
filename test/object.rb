@@ -3,11 +3,13 @@
 # rubocop:disable Lint/Void
 # rubocop:disable Lint/UnreachableCode
 # rubocop:disable Lint/UselessAccessModifier
+# rubocop:disable Lint/DuplicateMethods
 # rubocop:disable Style/CaseEquality
 # rubocop:disable Style/ClassCheck
 # rubocop:disable Style/FormatString
 # rubocop:disable Style/RedundantFormat
 # rubocop:disable Style/MixinGrouping
+# rubocop:disable Style/AccessorGrouping
 # rubocop:disable Layout/EmptyLinesAroundAccessModifier
 
 # @type const TestMod: Module
@@ -82,6 +84,12 @@ object.raise 'error'
 
 # @type const A: Class
 class A
+  attr_reader :foo
+  attr_reader :foo, :bar, :baz
+
+  attr_accessor :foo
+  attr_accessor :foo, :bar, :baz
+
   # @type const TestMod: Module
   module TestMod end
 

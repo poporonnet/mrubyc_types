@@ -2,6 +2,7 @@
 
 # rubocop:disable Lint/Void
 # rubocop:disable Lint/RedundantTypeConversion
+# rubocop:disable Lint/SymbolConversion
 # rubocop:disable Style/StringConcatenation
 
 String.new
@@ -84,6 +85,10 @@ String.inspect
 ' abcdef '.strip
 
 ' abcdef '.strip!
+
+'abcdef'.to_sym
+
+'abcdef'.intern
 
 'abcdef'.tr 'a-z', 'n-za-m'
 
