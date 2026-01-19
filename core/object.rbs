@@ -59,8 +59,8 @@ class Object < BasicObject
 
   def self.attr_accessor: (*Symbol names) -> void
 
-  def include: (Module, *Module mods) -> void
-  def self.include: (Module, *Module mods) -> void
+  def include: (*Module mods) -> void
+  def self.include: (*Module mods) -> void
 
   alias extend include
   alias self.extend self.include

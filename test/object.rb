@@ -93,10 +93,10 @@ class A
   # @type const TestMod: Module
   module TestMod end
 
-  include TestMod
+  include
   include TestMod, TestMod, TestMod
 
-  extend TestMod
+  extend
   extend TestMod, TestMod, TestMod
 
   public
@@ -106,10 +106,10 @@ class A
   protected
 end
 
-Object.include TestMod
+Object.include
 Object.include TestMod, TestMod, TestMod
 
-Object.extend TestMod
+Object.extend
 Object.extend TestMod, TestMod, TestMod
 
 sprintf "%d\n", 123
