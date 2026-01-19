@@ -7,6 +7,11 @@
 # rubocop:disable Style/ClassCheck
 # rubocop:disable Style/FormatString
 # rubocop:disable Style/RedundantFormat
+# rubocop:disable Style/MixinGrouping
+# rubocop:disable Layout/EmptyLinesAroundAccessModifier
+
+# @type const TestMod: Module
+module TestMod end
 
 object = Object.new
 
@@ -43,10 +48,14 @@ block_given?
 object.block_given?
 
 object.kind_of? Object
+object.kind_of? TestMod
 Object.kind_of? Object
+Object.kind_of? TestMod
 
 object.is_a? Object
+object.is_a? TestMod
 Object.is_a? Object
+Object.is_a? TestMod
 
 object.nil?
 Object.nil?
@@ -71,14 +80,29 @@ raise 'error'
 object.raise
 object.raise 'error'
 
-# @type const A: A
+# @type const A: Class
 class A
+  # @type const TestMod: Module
+  module TestMod end
+
+  include TestMod
+  include TestMod, TestMod, TestMod
+
+  extend TestMod
+  extend TestMod, TestMod, TestMod
+
   public
 
   private
 
   protected
 end
+
+Object.include TestMod
+Object.include TestMod, TestMod, TestMod
+
+Object.extend TestMod
+Object.extend TestMod, TestMod, TestMod
 
 sprintf "%d\n", 123
 

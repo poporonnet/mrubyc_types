@@ -30,9 +30,8 @@ class Object < BasicObject
 
   def block_given?: () -> bool
 
-  # TODO: Module
-  def kind_of?: (Class) -> bool
-  def self.kind_of?: (Class) -> bool
+  def kind_of?: (Class | Module) -> bool
+  def self.kind_of?: (Class | Module) -> bool
 
   alias is_a? kind_of?
   alias self.is_a? self.kind_of?
@@ -62,12 +61,11 @@ class Object < BasicObject
   # TODO: Symbol
   # def self.attr_accessor: (*Symbol names) -> void
 
-  # TODO: Module
-  # def include: (*Module mods) -> void
-  # def self.include: (*Module mods) -> void
-  #
-  # alias extend include
-  # alias self.extend include
+  def include: (Module, *Module mods) -> void
+  def self.include: (Module, *Module mods) -> void
+
+  alias extend include
+  alias self.extend self.include
 
   # TODO: Array, Symbol
   # def self.constants: (?bool inherit) -> Array[Symbol]
