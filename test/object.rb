@@ -80,7 +80,7 @@ raise 'error'
 object.raise
 object.raise 'error'
 
-# @type const A: A
+# @type const A: Class
 class A
   public
 
