@@ -79,10 +79,9 @@ class String < Object
 
   def strip!: () -> self?
 
-  # TODO: Symbol
-  # def to_sym: () -> Symbol
-  #
-  # alias intern to_sym
+  def to_sym: () -> Symbol
+
+  alias intern to_sym
 
   def tr: (String pattern, String replace) -> String
 
