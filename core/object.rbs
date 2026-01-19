@@ -30,9 +30,8 @@ class Object < BasicObject
 
   def block_given?: () -> bool
 
-  # TODO: Module
-  def kind_of?: (Class) -> bool
-  def self.kind_of?: (Class) -> bool
+  def kind_of?: (Class | Module) -> bool
+  def self.kind_of?: (Class | Module) -> bool
 
   alias is_a? kind_of?
   alias self.is_a? self.kind_of?
