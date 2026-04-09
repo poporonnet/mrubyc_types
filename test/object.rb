@@ -10,6 +10,7 @@
 # rubocop:disable Style/RedundantFormat
 # rubocop:disable Style/MixinGrouping
 # rubocop:disable Style/AccessorGrouping
+# rubocop:disable Style/OneClassPerFile
 # rubocop:disable Layout/EmptyLinesAroundAccessModifier
 
 # @type const TestMod: Module
