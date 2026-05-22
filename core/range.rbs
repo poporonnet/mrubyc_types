@@ -1,0 +1,17 @@
+# FIXME: mruby/c only supports Range[Integer] only
+class Range[out Elem] < Object
+  def ===: (untyped other) -> bool
+  def self.===: (untyped other) -> bool
+
+  def first: () -> Elem
+
+  def last: () -> Elem
+
+  def exclude_end?: () -> bool
+
+  def inspect: () -> String
+  def self.inspect: () -> String
+
+  alias to_s inspect
+  alias self.to_s self.inspect
+end
