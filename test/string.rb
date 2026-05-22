@@ -40,12 +40,15 @@ String.to_s
 
 'abcdef'.slice 2
 'abcdef'.slice 2, 3
+'abcdef'.slice 2..4
 
 'abcdef'[3]
 'abcdef'[3, 3]
+'abcdef'[3...6]
 
 'abcdef'[3] = 'D'
 'abcdef'[3, 3] = 'defghi'
+'abcdef'[3...6] = 'defghi'
 
 'abcdef'.b
 

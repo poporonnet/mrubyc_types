@@ -26,17 +26,15 @@ class String < Object
 
   def <<: (String) -> String
 
-  # TODO: Range
   def slice: (Integer nth) -> String?
            | (Integer nth, Integer len) -> String?
-  #        | (Range range) -> String?
+           | (Range[Integer] range) -> String?
 
   alias [] slice
 
-  # TODO: Range
   def []=: (Integer nth, String val) -> String
          | (Integer nth, Integer len, String val) -> String
-  #      | (Range range, String val) -> String
+         | (Range[Integer] range, String val) -> String
 
   def b: () -> String
 
