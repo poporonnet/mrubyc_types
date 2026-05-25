@@ -1,0 +1,5 @@
+class EnumerableTestClass
+  include Enumerable[String]
+
+  def each: () { (String) -> void } -> void
+end
