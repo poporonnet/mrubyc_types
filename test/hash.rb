@@ -1,3 +1,9 @@
+# frozen_string_literal: true
+
+# rubocop:disable Lint/Void
+# rubocop:disable Style/EmptyLiteral
+# rubocop:disable Style/PreferredHashMethods
+
 hash = { a: 1, b: 2, c: 3 }
 
 Hash.new
@@ -45,3 +51,5 @@ hash.each do |key, value|
   key
   value
 end
+
+# rubocop:enable all
