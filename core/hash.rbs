@@ -1,0 +1,45 @@
+class Hash[unchecked out K, unchecked out V] < Object
+  include Enumerable[[K, V]]
+
+  def initialize: () -> void
+
+  def []: %a{implicitly-returns-nil} (K key) -> V
+
+  def []=: (K key, V value) -> V
+
+  def clear: () -> self
+
+  def dup: () -> Hash[K, V]
+
+  def delete: (K key) -> V?
+
+  def empty?: () -> bool
+
+  def has_key?: (K key) -> bool
+
+  def has_value?: (V value) -> bool
+
+  def key: (V value) -> K?
+
+  def keys: () -> Array[K]
+
+  def size: () -> Integer
+
+  alias length size
+
+  alias count size
+
+  def merge: [U, W](Hash[U, W] other) -> Hash[K | U, V | W]
+
+  def merge!: (Hash[K, V] other) -> self
+
+  def values: () -> Array[V]
+
+  def inspect: () -> String
+  def self.inspect: () -> String
+
+  alias to_s inspect
+  alias self.to_s self.inspect
+
+  def each: () { ([K, V]) -> void } -> self
+end
