@@ -1,6 +1,5 @@
 class Symbol < Object
-  # TODO: Array
-  # def self.all_symbols: () -> Array[Symbol]
+  def self.all_symbols: () -> Array[Symbol]
 
   def inspect: () -> String
   def self.inspect: () -> String
