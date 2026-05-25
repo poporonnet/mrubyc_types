@@ -64,8 +64,10 @@ Object.nil?
 
 p
 p 1
+p 1, true, 'a'
 object.p
 object.p 1
+object.p 1, true, 'a'
 
 print
 print 1, true, 'a'
@@ -111,6 +113,8 @@ Object.include TestMod, TestMod, TestMod
 
 Object.extend
 Object.extend TestMod, TestMod, TestMod
+
+Object.constants
 
 sprintf "%d\n", 123
 
