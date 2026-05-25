@@ -105,4 +105,52 @@ arr.join
 arr.join ','
 arr.join 123
 
+arr.all?
+arr.all? Integer
+arr.all? { |item| item > 0 }
+
+arr.any?
+arr.any? String
+arr.any? { |item| item == 0 }
+
+arr.collect! { |item| item**2 }
+
+arr.map! { |item| item**2 }
+
+arr.delete_if { |item| item % 2 == 0 }
+
+arr.each { |item| item }
+
+arr.each_index { |index| index }
+
+arr.index 1
+arr.index { |item| item > 0 }
+
+arr.find_index 1
+arr.find_index { |item| item > 0 }
+
+arr.none?
+arr.none? String
+arr.none? { |item| item == 0 }
+
+arr.reject! { |item| item == 0 }
+
+arr.reject { |item| item == 0 }
+
+arr.reverse_each { |item| item }
+
+arr.select { |item| item % 2 == 1 }
+
+arr.filter { |item| item % 2 == 1 }
+
+arr.select! { |item| item % 2 == 1 }
+
+arr.filter! { |item| item % 2 == 1 }
+
+arr.sort!
+arr.sort! { |a, b| b - a }
+
+arr.sort
+arr.sort { |a, b| b - a }
+
 # rubocop:enable all
