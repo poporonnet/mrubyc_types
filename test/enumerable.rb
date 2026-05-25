@@ -14,10 +14,11 @@ end
 a = EnumerableTestClass.new
 a.each { |item| item }
 
-# TODO: Array
-# a.collect { |item| item }
-#
-# a.map { |item| item }
+a.collect { |item| item }
+a.collect { |item| item.size }
+
+a.map { |item| item }
+a.map { |item| item.size }
 
 a.each_with_index do |item, index|
   item
