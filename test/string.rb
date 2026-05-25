@@ -77,6 +77,11 @@ String.inspect
 'abcdef'.slice! 2
 'abcdef'.slice! 2, 3
 
+'abcdef'.split
+'abcdef'.split nil
+'abcdef'.split 'cd'
+'abcdef'.split 'cd', 1
+
 '  abcdef'.lstrip
 
 '  abcdef'.lstrip!
@@ -102,6 +107,8 @@ String.inspect
 'abcdef'.end_with? 'def'
 
 'abcdef'.include? 'cd'
+
+'abcdef'.bytes
 
 'abcdef'.upcase
 

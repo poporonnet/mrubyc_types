@@ -1,0 +1,133 @@
+class Array[unchecked out Elem] < Object
+  include Enumerable[Elem]
+
+  interface _Pattern[T]
+    def ===: (T other) -> bool
+  end
+
+  def initialize: () -> void
+                | (Integer size, ?Elem val) -> void
+
+  def self.[]: [T](*T item) -> Array[T]
+
+  def +: [T](Array[T] other) -> Array[Elem | T]
+
+  def []: %a{implicitly-returns-nil} (Integer nth) -> Elem
+        | (Range[Integer?] range) -> Array[Elem]?
+        | (Integer start, Integer length) -> Array[Elem]?
+
+  alias at []
+
+  def []=: (Integer nth, Elem val) -> Elem
+         | (Integer start, Integer length, Elem val) -> Elem
+         | (Integer start, Integer length, Array[Elem] val) -> Array[Elem]
+
+  def clear: () -> self
+
+  def difference: (*Array[untyped] other) -> Array[Elem]
+
+  alias - difference
+
+  def delete_at: %a{implicitly-returns-nil} (Integer index) -> Elem
+
+  def empty?: () -> bool
+
+  def size: () -> Integer
+
+  alias length size
+
+  alias count size
+
+  def include?: (Elem val) -> bool
+
+  def &: (Array[untyped] other) -> Array[Elem]
+
+  def |: [T](Array[T] other) -> Array[Elem | T]
+
+  def first: %a{implicitly-returns-nil} () -> Elem
+
+  def last: %a{implicitly-returns-nil} () -> Elem
+
+  def push: (Elem val) -> self
+
+  alias << push
+
+  def pop: () -> Elem?
+         | (Integer n) -> Array[Elem]
+
+  def shift: () -> Elem?
+           | (Integer n) -> Array[Elem]
+
+  def unshift: (Elem val) -> self
+
+  def dup: () -> Array[Elem]
+
+  def min: %a{implicitly-returns-nil} () -> Elem
+
+  def max: %a{implicitly-returns-nil} () -> Elem
+
+  def minmax: () -> [Elem?, Elem?]
+
+  def uniq: () -> Array[Elem]
+
+  def uniq!: () -> self?
+
+  def reverse: () -> Array[Elem]
+
+  def reverse!: () -> self
+
+  def inspect: () -> String
+  def self.inspect: () -> String
+
+  alias to_s inspect
+  alias self.to_s self.inspect
+
+  def join: (?_ToS separator) -> String
+
+  def all?: () -> bool
+          | (_Pattern[Elem] pattern) -> bool
+          | () { (Elem item) -> boolish } -> bool
+
+  def any?: () -> bool
+          | (_Pattern[Elem] pattern) -> bool
+          | () { (Elem item) -> boolish } -> bool
+
+  def collect!: () { (Elem item) -> Elem } -> self
+
+  alias map! collect!
+
+  def delete_if: () { (Elem item) -> boolish } -> self
+
+  def each: () { (Elem item) -> void } -> self
+
+  def each_index: () { (Integer index) -> void } -> self
+
+  def index: (untyped val) -> Integer?
+           | () { (Elem item) -> boolish } -> Integer?
+
+  alias find_index index
+
+  def none?: () -> bool
+           | (_Pattern[Elem] pattern) -> bool
+           | () { (Elem item) -> boolish } -> bool
+
+  def reject!: () { (Elem item) -> boolish } -> self?
+
+  def reject: () { (Elem item) -> boolish } -> Array[Elem]
+
+  def reverse_each: () { (Elem item) -> void } -> self
+
+  def select: () { (Elem item) -> boolish } -> Array[Elem]
+
+  alias filter select
+
+  def select!: () { (Elem item) -> boolish } -> self?
+
+  alias filter! select!
+
+  def sort!: () -> self
+           | () { (Elem a, Elem b) -> Integer } -> self
+
+  def sort: () -> Array[Elem]
+          | () { (Elem a, Elem b) -> Integer } -> Array[Elem]
+end

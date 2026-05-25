@@ -62,8 +62,7 @@ class String < Object
   def slice!: (Integer nth) -> String?
             | (Integer nth, Integer len) -> String?
 
-  # TODO: Array
-  # def split: (String? sep, ?Integer limit) -> Array[String]
+  def split: (?String? sep, ?Integer limit) -> Array[String]
 
   def lstrip: () -> String
 
@@ -91,8 +90,7 @@ class String < Object
 
   def include?: (String) -> bool
 
-  # TODO: Array
-  # def bytes: () -> Array[Integer]
+  def bytes: () -> Array[Integer]
 
   def upcase: () -> String
 

@@ -39,9 +39,9 @@ class Object < BasicObject
   def nil?: () -> bool
   def self.nil?: () -> bool
 
-  # TODO: Array
   def p: () -> nil
        | [T](T arg0) -> T
+       | [T](*T args) -> Array[T]
 
   def print: (*untyped args) -> nil
 
@@ -65,8 +65,7 @@ class Object < BasicObject
   alias extend include
   alias self.extend self.include
 
-  # TODO: Array
-  # def self.constants: (?bool inherit) -> Array[Symbol]
+  def self.constants: (?bool inherit) -> Array[Symbol]
 
   def self.public: () -> void
 

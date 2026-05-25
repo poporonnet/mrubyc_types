@@ -3,6 +3,8 @@
 # rubocop:disable Lint/SymbolConversion
 # rubocop:disable Lint/RedundantTypeConversion
 
+Symbol.all_symbols
+
 :foo.inspect
 Symbol.inspect
 
