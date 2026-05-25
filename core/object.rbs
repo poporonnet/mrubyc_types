@@ -84,4 +84,8 @@ class Object < BasicObject
   alias self.inspect self.to_s
 
   def loop: () { () -> void } -> bot
+
+  def sleep: (Integer | Float sec) -> Integer
+
+  def sleep_ms: (Integer ms) -> Integer
 end
