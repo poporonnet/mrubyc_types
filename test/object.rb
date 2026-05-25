@@ -128,4 +128,9 @@ Object.inspect
 
 loop { puts }
 
+sleep 1
+sleep 1.0
+
+sleep_ms 1000
+
 # rubocop:enable all
