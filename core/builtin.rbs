@@ -1,0 +1,11 @@
+# rubocop:disable RBS/Lint/TopLevelInterface
+
+interface _ToS
+  def to_s: () -> String
+end
+
+interface _Each[unchecked out T]
+  def each: () { (T) -> void } -> void
+end
+
+# rubocop:enable all

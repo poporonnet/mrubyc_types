@@ -1,8 +1,4 @@
 module Enumerable[unchecked out Elem] : _Each[Elem]
-  interface _Each[unchecked out T]
-    def each: () { (T) -> void } -> void
-  end
-
   # TODO: Array
   # def collect: [T]() { (Elem item) -> T } -> Array[T]
   #
