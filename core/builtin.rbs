@@ -4,8 +4,10 @@ interface _ToS
   def to_s: () -> String
 end
 
-interface _Each[unchecked out T]
+interface _Each[out T]
   def each: () { (T) -> void } -> void
 end
+
+type boolish = top
 
 # rubocop:enable all
