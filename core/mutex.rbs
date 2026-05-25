@@ -1,0 +1,13 @@
+class Mutex
+  def initialize: () -> void
+
+  def lock: () -> self
+
+  def unlock: () -> self
+
+  def try_lock: () -> bool
+
+  def locked?: () -> bool
+
+  def owned?: () -> bool
+end
