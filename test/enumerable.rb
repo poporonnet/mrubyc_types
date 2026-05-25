@@ -2,6 +2,7 @@
 
 # rubocop:disable Lint/Void
 # rubocop:disable Style/Documentation
+# rubocop:disable Style/SymbolProc
 
 class EnumerableTestClass
   include Enumerable

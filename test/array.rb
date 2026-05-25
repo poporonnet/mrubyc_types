@@ -3,6 +3,8 @@
 # rubocop:disable Lint/Void
 # rubocop:disable Style/EmptyLiteral
 # rubocop:disable Style/RedundantArrayConstructor
+# rubocop:disable Style/NumericPredicate
+# rubocop:disable Style/EvenOdd
 
 arr = [1, 2, 3]
 

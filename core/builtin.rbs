@@ -1,4 +1,5 @@
 # rubocop:disable RBS/Lint/TopLevelInterface
+# rubocop:disable RBS/Lint/TopLevelTypeAlias
 
 interface _ToS
   def to_s: () -> String
