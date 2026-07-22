@@ -1,0 +1,48 @@
+class Task < Object
+  def self.get: () -> Task
+              | (String name) -> Task?
+
+  alias self.current self.get
+
+  def self.list: () -> Array[Task]
+
+  def self.name_list: () -> Array[String]
+
+  def name: () -> String
+  def self.name: () -> String
+
+  def name=: (String name) -> String
+  def self.name=: (String name) -> String
+
+  def priority: () -> Integer
+  def self.priority: () -> Integer
+
+  def priority=: (Integer priority) -> Integer
+  def self.priority=: (Integer priority) -> Integer
+
+  def status: () -> String
+
+  def suspend: () -> void
+  def self.suspend: () -> void
+
+  def resume: () -> void
+
+  def terminate: () -> void
+  def self.terminate: () -> void
+
+  # TODO: Exception
+  def raise: () -> void
+          #  | (Exception exception)
+
+  def join: () -> Task
+
+  def value: () -> untyped
+
+  def pass: () -> void
+
+  def self.create: (String byte_code, ?Integer regs_size) -> Task
+
+  def run: () -> void
+
+  def rewind: () -> void
+end
