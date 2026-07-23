@@ -32,7 +32,7 @@ class Task < Object
 
   # TODO: Exception
   def raise: () -> void
-          #  | (Exception exception)
+  #        | (Exception exception)
 
   def join: () -> Task
 
