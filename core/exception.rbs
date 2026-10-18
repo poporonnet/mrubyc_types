@@ -1,5 +1,6 @@
 class Exception < Object
-  def self.new: (?String message) -> instance
+  def initialize: (?String message) -> void
+
   def message: () -> String
 end
 
