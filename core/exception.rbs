@@ -28,8 +28,9 @@ end
 class NoMethodError < NameError
 end
 
-class NoMatchingPatternError < StandardError
-end
+# newer mruby/c 4.0
+#class NoMatchingPatternError < StandardError
+#end
 
 class RangeError < StandardError
 end
