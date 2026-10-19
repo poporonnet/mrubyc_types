@@ -35,6 +35,7 @@ task.terminate
 Task.terminate
 
 task.raise
+task.raise Exception.new
 
 task.join
 

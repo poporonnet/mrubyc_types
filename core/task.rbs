@@ -30,9 +30,8 @@ class Task < Object
   def terminate: () -> void
   def self.terminate: () -> void
 
-  # TODO: Exception
   def raise: () -> void
-  #        | (Exception exception)
+           | (Exception exception) -> void
 
   def join: () -> Task
 

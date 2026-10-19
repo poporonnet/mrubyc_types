@@ -1,0 +1,45 @@
+class Exception < Object
+  def initialize: (?String message) -> void
+
+  def message: () -> String
+end
+
+class NoMemoryError < Exception
+end
+
+class NotImplementedError < Exception
+end
+
+class StandardError < Exception
+end
+
+class ArgumentError < StandardError
+end
+
+class IndexError < StandardError
+end
+
+class IOError < StandardError
+end
+
+class NameError < StandardError
+end
+
+class NoMethodError < NameError
+end
+
+# newer mruby/c 4.0
+#class NoMatchingPatternError < StandardError
+#end
+
+class RangeError < StandardError
+end
+
+class RuntimeError < StandardError
+end
+
+class TypeError < StandardError
+end
+
+class ZeroDivisionError < StandardError
+end

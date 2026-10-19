@@ -79,10 +79,20 @@ puts 1, true, 'a'
 object.puts
 object.puts 1, true, 'a'
 
+exception = Exception.new
+
 raise
 raise 'error'
+raise exception
+raise Exception # rubocop:disable Lint/RaiseException
+raise exception, 'error'
+raise Exception, 'error' # rubocop:disable Lint/RaiseException
 object.raise
 object.raise 'error'
+object.raise exception
+object.raise Exception
+object.raise exception, 'error'
+object.raise Exception, 'error'
 
 # @type const A: Class
 class A

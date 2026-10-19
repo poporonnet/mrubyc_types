@@ -47,13 +47,12 @@ class Object < BasicObject
 
   def puts: (*untyped args) -> nil
 
-  # TODO Exception
   def raise: () -> bot
            | (String message) -> bot
-  #        | (Exception) -> bot
-  #        | (singleton(Exception)) -> bot
-  #        | (Exception, String message) -> bot
-  #        | (singleton(Exception), String message) -> bot
+           | (Exception) -> bot
+           | (singleton(Exception)) -> bot
+           | (Exception, String message) -> bot
+           | (singleton(Exception), String message) -> bot
 
   def self.attr_reader: (*Symbol names) -> void
 
